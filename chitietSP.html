@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi tiết sản phẩm</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+ 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+body{
+		margin: 0;
+		padding: 0;
+		font-family: verdana;
+		background-color: #fff;
+		background-size: cover;
+	}
+
+	   .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-top {
+      height: 80%;
+      width: 100%;
+      margin-top: -10px;
+    }
+
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+    }
+
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+   /* .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    
+    .buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:2.2rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}*/
+  </style>
+</style>
+<body>
+<div id="containern">
+  <!-- menu -->
+   <nav class="navbar navbar-inverse" style="position: -webkit-sticky;position: sticky;top: 0;z-index: 1000; border-bottom: 2px solid red;background-color: #111111; width: 100%;" data-aos="fade-right">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#"><img src="img/logo1.png" width="150px" style="margin-right: 100px; margin-left: 100px;"></a>
+    </div>
+    <ul class="nav navbar-nav link">
+      <li><a href="index.html">Trang chủ</a></li> 
+        <li><a href="gioithieu.html">Giới thiệu</a></li> 
+        <li><a href="###">Phân Loại <i class="fa fa-caret-down"></i></a>
+           <div class="menu">
+                           <ul style="padding-left: 5px; margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Quốc gia</li>
+                              <li><a href="danhmuc.html">Việt Nam</a></li>
+                              <li><a href="danhmuc.html">Nhật</a></li>
+                              <li><a href="danhmuc.html">Đức</a></li>
+                              <li><a href="danhmuc.html">Thái Lan</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ; ">Hãng</li>
+                              <li><a href="danhmuc.html">Lamborghini</a></li>
+                              <li><a href="danhmuc.html">BMW</a></li>
+                              <li><a href="danhmuc.html">Arrinera</a></li>
+                              <li><a href="danhmuc.html">Aston Martin</a></li>
+                              <li><a href="danhmuc.html">Pagani</a></li>
+                              <li><a href="danhmuc.html">W Motors</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Nhu cầu</li>
+                              <li><a href="danhmuc.html">Thiêt kế</a></li>
+                              <li><a href="danhmuc.html">Nội Thất</a></li>
+                              <li><a href="danhmuc.html">Dung tích</a></li>
+                              <li><a href="danhmuc.html">Động cơ</a></li>
+                              <li><a href="danhmuc.html">Tốc độ</a></li>
+                           </ul>
+                            <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Mức giá</li>
+                              <li><a href="danhmuc.html"> MG <1 tỷ</a></li>
+                              <li><a href="danhmuc.html">MG <20triệu</a></li>
+                              <li><a href="danhmuc.html">MG >20triệu</a></li>
+                              <li><a href="danhmuc.html"></a></li>
+                           </ul>
+                        </div>
+        </li> 
+      <!--  <li><a href="#">Tin tức</a></li>  -->
+        <li><a href="lienhe.html">Liên hệ</a></li> 
+      </ul>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="###"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- tk -->
+    <div class="timkiem" data-aos="fade-in" style="transition: all 1.5s;">    
+        <button type="button" class="buttongh" ><a href="giohang.html"><i class="fa fa-cart-arrow-down"></i></a></button>
+        <input type="search" placeholder="search..."><span><i class="fa fa-search"></i></span>
+      </div>
+
+      <div class="timkiem1" data-aos="fade-in" style="transition: all 1.5s;">
+        <button type="button" class="buttongh"><a href="#"><i class="fa fa-phone-square"></i></a></button>  
+      </div>
+      <div class="timkiem2 " data-aos="fade-in" style="transition: all 1.5s;">
+        <button type="button" class="buttongh"><a href="#"><i class="fa fa-angle-up"></i></a></button>  
+      </div>
+<!-- form -->
+<!-- <label class="lab"> Mô tả sản phẩm</label> -->
+<div id="contain" style="position: relative; margin-top: 20px;"> 
+
+	<div class="form1" data-aos="fade-left" style="transition: all 1s;">
+	 <!-- Swiper -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/xe1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/xe2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/xe1.jpg)"></div>
+      <div class="swiper-slide"><iframe width="1106" height="622" src="https://www.youtube.com/embed/ql94IYUrwXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen type="audio/mpeg"></iframe></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/xe1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/xe2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/xe1.jpg)"></div>
+      <div class="swiper-slide"><iframe width="1106" height="622" src="https://www.youtube.com/embed/ql94IYUrwXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen type="audio/mpeg"></iframe></div>
+    </div>
+  </div>
+  	</div>    
+	</div>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  </script>
+	<div class="form2" data-aos="fade-left" style="transition: all 1s;">
+		<div> <h1> Lamborghini Aventador LP700-4 Roadste</h1></div>
+		<div style="font-weight: bold; padding-left: 5px"> Giá cả: <font color="red" >26 tỷ VNĐ</font></div>
+		<div class="mota">
+      <p>
+ <div id="rating" style="margin-top: -10px;">
+    <input type="radio"  />
+    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+ 
+    <input type="radio"  />
+    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+ 
+    <input type="radio"  />
+    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+ 
+    <input type="radio" />
+    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+ 
+    <input type="radio"  />
+    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+</div>
+</p><br><font style="font-weight: bold; margin-left: -140px;" > Mô tả: </font><br>
+				Lamborghini là hãng siêu xe mà các tín đồ xe siêu sang công suất mạnh mơ ước. <br>
+          <p>Đặc trưng của Lamborghini Aventador LP 700-4 là những đường nét nếp gấp trên mặt phẳng, ngoại hình hầm hố. Với thiết kế những đường gân vuốt dọc thân xe, vòm bánh ôm sát lốp xe với lazang thể thao cỡ lớn và kẹp phanh gốm carbon sáng màu. Đầu xe với cản trước hầm hố cùng hút gió cỡ lớn khoét sâu để khi di chuyển tốc độ cao xe vẫn mang lại cảm giác êm ái. Hệ thống đèn pha LED thông minh tự động thay đổi góc chiếu sáng theo góc lái. </p>
+        <div id="mota" style="cursor: pointer; color: #0009;">Xem thêm mô tả..</div>
+        <div id="anmota" style="cursor: pointer; color: #0009;  display: none;"><button style="width: 30px; border-radius: 25px;border-color: #0002"><i class="fa fa-angle-up" style="color: #0009; font-weight: bold;"></i></button> Ẩn bớt mô tả..</div>
+        <div id="vanb" style="display: none;">
+           <p>Đặc trưng của Lamborghini Aventador LP 700-4 là những đường nét nếp gấp trên mặt phẳng, ngoại hình hầm hố. Với thiết kế những đường gân vuốt dọc thân xe, vòm bánh ôm sát lốp xe với lazang thể thao cỡ lớn và kẹp phanh gốm carbon sáng màu. Đầu xe với cản trước hầm hố cùng hút gió cỡ lớn khoét sâu để khi di chuyển tốc độ cao xe vẫn mang lại cảm giác êm ái. Hệ thống đèn pha LED thông minh tự động thay đổi góc chiếu sáng theo góc lái. </p>
+        
+			</div>
+ <!--      <div id="anmota" style="cursor: pointer; color: #0009; display: none;">Ẩn bớt mô tả..</div> -->
+				<p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $("#mota").click(function(){
+     $("#vanb").show();
+    $("#vanb").show("slow");
+     $("#vanb").show(500);
+     $("#mota").hide();
+     $("#anmota").show();
+    });
+    });
+</script>
+
+  <script>
+    $(document).ready(function(){
+    $("#anmota").click(function(){
+     $("#vanb").hide();
+    $("#vanb").hide("slow");
+     $("#vanb").hide(500);
+     $("#anmota").hide();
+     $("#mota").show();
+    });
+    });
+</script>
+
+        <button onclick="buttonClick()" style="margin-top: 40px; "> Số lượng</button>
+<input type="text" id="inc" value="1" style="width: 30px;border: 1px solid red;"></input>
+   <script>
+    var i = 0;
+    function buttonClick() {
+        document.getElementById('inc').value = ++i;
+    }
+</script>
+</p>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>
+
+					<div class="muasp">
+						<button type="button" class="but" ><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but"  style="background: #990066; width: 150px;"><a href="###">Quà tặng hấp dẫn</a></button>
+					</div>
+	</div>
+<div class="solieu" data-aos="fade-down" style="transition: all 1s;">
+                           <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Tổng quan</li>
+                              <li>Nhà chế tạo: Lamborghini</li>
+                              <li>Sản xuất: Tháng 2 năm 2011–nay</li>
+                              <li>Lắp ráp: 	Sant'Agata Bolognese, Ý</li>
+                           </ul>
+                           <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Truyền động</li>
+                              <li>Động cơ: 6.5 L L539 V12 </li>
+                              <li>Truyền động: 	7-speed ISR Semi-automatic transmission</li>
+                              <li></li>
+                           </ul>
+                           <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Kích thước</li>
+                              <li>Chiều dài cơ sở:	2.700 mm (106,30 in)</li>
+                              <li>Chiều dài: 4.780 mm (188,19 in)</li>
+                              <li>Chiều rộng: 2.030 mm (79,92 in) (w/mirrors: 2.265 mm (89,17 in))[1]</li>
+                              <li>Chiều cao: 1.136 mm (44,72 in)</li>
+                              <li>Trọng lượng Curb: 	
+1.575 kg (3.472 lb) (khô)
+1.731 kg (3.816 lb) (w/ chất lỏng, Châu Âu)[2]
+1.852 kg (4.083 lb) (w/ chất lỏng, Hoa Kỳ)[3]
+1.769 kg (3.900 lb) LP 750-4 SV (w/chất lỏng, Hoa Kỳ)[4]</li>
+                           </ul>
+                            <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Niên đại</li>
+                              <li>Tiền nhiệm: Lamborghini Murciélago </li>
+                              <li></li>
+                              <li></li>
+                           </ul>
+                        
+</div>
+</div>
+</div>
+<div class="nutbut" data-aos="fade-right">
+  <button id="nut" >Bình Luận</button>
+  </div>
+  <div class="comment" id="comment">
+    <div class="bl1">
+      <div class="khungBL">
+        <label><h4>nckjdnjcnd</h4> nxjnskxnksnjfvfvf</label>
+        <br>
+        <a href="###">Thích</a>
+         <a href="###">Trả lời</a>
+          11-2-2019
+      </div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSO1Fa9mPDCqFWBQuw1d8dljsaTMxrYbKPdFg&usqp=CAU ">
+    </div>
+    <div class="bl1">
+      <div class="khungBL">
+        <label style="width: 430px;float: left;"><h4>nckjdnjcnd </h4>
+ Đặc trưng của Lamborghini Aventador LP 700-4 là những đường nét nếp gấp trên mặt phẳng, ngoại hình hầm hố. Với thiết kế những đường gân vuốt dọc thân xe, vòm bánh ôm sát lốp xe với lazang thể thao cỡ lớn và kẹp phanh gốm carbon sáng màu.</label><br>
+        <a href="###">Thích</a>
+         <a href="###">Trả lời</a>
+          11-2-2019
+
+      </div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSR_eT64WUZVxjyLtCrdBC-ik8YVYs5SmdZ5Q&usqp=CAU ">
+    </div>
+    <div class="bl1">
+      <div class="khungBL">
+        <label><h4>nckjdnjcnd</h4> nxjnskxnksnjfvfvf</label>
+        <br>
+        <a href="###">Thích</a>
+         <a href="###">Trả lời</a>
+          11-2-2019
+      </div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_QzE1ScHlfSSyJDvVkfARH_YaKKlOI2iWSg&usqp=CAU">
+    </div>
+    <div class="bl1">
+      <div class="khungBL">
+        <label style="border: 1px solid #000; height: 50px;margin-top: 5px;border-radius: 50px; color: grey; line-height: 50px;padding-left: 10px;width: 200px;margin-right: 300px;">Bình luận... </label>
+        <br>
+      </div>
+       <img src="https://image.flaticon.com/icons/svg/17/17797.svg ">
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $("#nut").click(function(){
+     $("#comment").fadeToggle();
+    $("#comment").fadeToggle("slow");
+     $("#comment").fadeToggle(500);
+    });
+    });
+</script>
+<div class="sanphamtuongtu" data-aos="fade-right">
+<div class="tie" style="margin-top: -50px; margin-left: -500px;"><h2>Siêu phẩm tương tự</h2>
+<div style="margin-top: -25px; background:  #000; margin-left: 600px;margin-bottom: 50px;"><hr width="800px" size=1 ></div></div>
+
+    <label><a href="#"><i><u>Xem thêm...</u></i></a></label>
+      <div class="divphutung"  data-aos="fade-left" style="transition: all 1s;"><a href="chitietSP.html"><img src="img/sale1.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado </p><p>Giá sale: <font color="blue">2.092.500đ</font></p></a></div>
+      <div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale2.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado </p><p>Giá sale: <font color="blue">2.092.500đ</font></p></div>
+      <div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale3.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado </p><p>Giá sale: <font color="blue">2.092.500đ</font></p></div>
+      <div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale4.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado</p><p>Giá sale: <font color="blue">2.092.500đ</font></p></div>
+</div>
+
+<!-- thanh cuối -->
+<div id="thanhcuoi" >
+	<div class="email">* Đăng ký nhận thông tin: </div>
+	<div class="thanhEmail">Email: <input type="text" placeholder="Nhập Email...">
+		<input type="submit" value="Đăng ký" formaction="trangchu.html">
+	</div>
+	<div> <hr size=1 width="800px" align="left"  style="background: #DCDCDC; margin: 80px 0 0 180px;" ></div>
+	<div class="review">
+		<ul>
+			<li>SUPPLO CAR</li>
+			<li>Liên hệ</li>
+			<li>Liên kết</li>
+			<li>Hỗ trợ thanh toán</li>
+		</ul>
+	</div>
+	<div class="cuoicung">
+			<div class="hh1">
+				Suplo cam kết mang lại cảm giác mới mẻ và hứng thú, tạo ra những trãi nghiệm khó quên. <br>
+				Điều làm nên sự khác biệt của Suplo so với các thương hiệu xa xỉ khác là sự độc đáo táo bạo của chúng tôi.</div>
+				<div class="hh2">
+				Địa chỉ: <br>
+				cs1: Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng 550000 <br>
+				SDT:  0898162561 <br>
+				Email: suplo@gmail.com
+
+				</div>
+				<div class="hh3">
+						<div><a href="#">Giới thiệu</a></div>
+						<div><a href="#">Tin tức nổi bật</a></div>
+						<div><a href="#">Phản hồi</a></div>
+				</div>
+				<div class="hh4">
+					<ul class="social-agileinfo">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+				</div>
+	</div>
+	<div class="bando">
+		<h4><i class="fa fa-street-view"></i>Địa chỉ Gagare:</h4><br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5501.113252410916!2d108.21439058556838!3d16.059978945058678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1591912571663!5m2!1svi!2s" width="290px" height="230px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+</div>
+	
+</div>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

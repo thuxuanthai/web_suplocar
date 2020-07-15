@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danh mục sản phẩm</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+ 
+</head>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: verdana;
+		background-color: #fff;
+		background-size: cover;
+	}
+	
+</style>
+    <!-- <script>
+
+function test(pageNumber)
+{
+
+  var page="#page-id-"+pageNumber;
+  $('.select').hide()
+  $(page).show()
+
+}
+
+</script> -->
+<body>
+	<div id="containern">
+	<!-- menu -->
+	  <nav class="navbar navbar-inverse" style="position: -webkit-sticky;position: sticky;top: 0;z-index: 1000; border-bottom: 2px solid red;background-color: #111111; width: 100%;" data-aos="fade-right">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#"><img src="img/logo1.png" width="150px" style="margin-right: 100px; margin-left: 100px;"></a>
+    </div>
+    <ul class="nav navbar-nav link">
+      <li><a href="index.html">Trang chủ</a></li> 
+        <li><a href="gioithieu.html">Giới thiệu</a></li> 
+        <li><a href="###">Phân Loại <i class="fa fa-caret-down"></i></a>
+           <div class="menu">
+                           <ul style="padding-left: 5px; margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Quốc gia</li>
+                              <li><a href="danhmuc.html">Việt Nam</a></li>
+                              <li><a href="danhmuc.html">Nhật</a></li>
+                              <li><a href="danhmuc.html">Đức</a></li>
+                              <li><a href="danhmuc.html">Thái Lan</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ; ">Hãng</li>
+                              <li><a href="danhmuc.html">Lamborghini</a></li>
+                              <li><a href="danhmuc.html">BMW</a></li>
+                              <li><a href="danhmuc.html">Arrinera</a></li>
+                              <li><a href="danhmuc.html">Aston Martin</a></li>
+                              <li><a href="danhmuc.html">Pagani</a></li>
+                              <li><a href="danhmuc.html">W Motors</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Nhu cầu</li>
+                              <li><a href="danhmuc.html">Thiêt kế</a></li>
+                              <li><a href="danhmuc.html">Nội Thất</a></li>
+                              <li><a href="danhmuc.html">Dung tích</a></li>
+                              <li><a href="danhmuc.html">Động cơ</a></li>
+                              <li><a href="danhmuc.html">Tốc độ</a></li>
+                           </ul>
+                            <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Mức giá</li>
+                              <li><a href="danhmuc.html"> MG <1 tỷ</a></li>
+                              <li><a href="danhmuc.html">MG <20triệu</a></li>
+                              <li><a href="danhmuc.html">MG >20triệu</a></li>
+                              <li><a href="danhmuc.html"></a></li>
+                           </ul>
+                        </div>
+        </li> 
+      <!--  <li><a href="#">Tin tức</a></li>  -->
+        <li><a href="lienhe.html">Liên hệ</a></li> 
+      </ul>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="###"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- tk -->
+		<div class="timkiem" data-aos="fade-in" style="transition: all 1.5s;">		
+				<button type="button" class="buttongh" ><a href="#"><i class="fa fa-cart-arrow-down"></i></a></button>
+				<input type="search" placeholder="search..."><span><i class="fa fa-search"></i></span>
+			</div>
+
+			<div class="timkiem1" data-aos="fade-in" style="transition: all 1.5s;">
+				<button type="button" class="buttongh"><a href="#"><i class="fa fa-phone-square"></i></a></button>	
+			</div>
+			<div class="timkiem2 " data-aos="fade-in" style="transition: all 1.5s;">
+				<button type="button" class="buttongh"><a href="#"><i class="fa fa-angle-up"></i></a></button>	
+			</div>
+
+<div class="cuachung"> 
+	<h2 style="color: red;margin-left: 350px;font-weight: bold ;font-family: 'Lobster12';" data-aos="fade-in">Tất cả siêu phẩm</h2>
+<div class="dungmenu" data-aos="fade-in" style="transition: all 1.5s;">
+	<i class="fa fa-th-large"></i>
+	<i class="fa fa-th-list"></i>
+		<span style="margin-left: 20px;">Sắp xếp theo:</span>
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:150px;padding: 0; float: right; background-color: grey;z-index: 99; margin-right: 690px;margin-top: 4px; ">
+  <select>
+    <option value="0">Sắp xếp</option>
+    <option value="1">Giá: Tăng dần</option>
+    <option value="2">Giá: Giảm dần</option>
+    <option value="3">Tên: A-Z</option>
+    <option value="4">Tên: Z-A</option>
+    <option value="5">Cũ nhất</option>
+    <option value="6">Mới nhất</option>
+    <option value="7">Bán chạy nhất</option>
+  </select>
+</div>
+</div>
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+
+
+<div class="content" data-aos="fade-in" style="transition: all 1.5s;">
+	<div class="itemm item1">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm item2">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm item3">
+		<img src="img/xe2.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+	<div class="itemm">
+		<img src="img/xe1.jpg">
+		<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+		<div class="giasp">Giá: 26 TỶ VNĐ</div>
+	</div>
+<div class="center">
+	<div class="pagination ">
+	  <a href="#">&laquo;</a>
+	  <a href="#">1</a>
+	  <a href="#" class="active">2</a>
+	  <a href="#">3</a>
+	  <a href="#">4</a>
+	  <a href="#">5</a>
+	  <a href="#">6</a>
+	  <a href="#">&raquo;</a>
+	</div>
+</div>
+</div>
+
+<div class="chayquangcao" data-aos="fade-up">
+	<img src="https://lh3.googleusercontent.com/proxy/ywJxbxxAjWSYG9ViNPqr5iZFrA6FNCYEhbBZq2HGswZgiVYPipA2IN7y1rExLZ9kJHUCjtt-w3n_J-XxZ45yOAyWST5F8gNwRw">
+	<img src="https://nissanmienbac.com.vn/wp-content/uploads/2016/12/CTKMT12_banner_1920x640_baivietpxb-720x382.jpg">
+	<img src="https://lh3.googleusercontent.com/proxy/uqc1mokg8A0sntiGJSkEpweUOiOprHF1_A0LpdsZxg7ehxuajgi8UUabJGT4rr6hM1BBXMfYhB6HhsU6BhurhOzxrO88QAjl6R5763EDLRHfvdFVHeCLucwJXPdpcs2O4WT9DZQZqcuuSnbcMGgY2Zro8HDH_1O0iw">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZoeNbmEI0uhje79QpLHM9i6Qcy-5zZueIuw&usqp=CAU">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLuB_4dtpd50Gb5yDPs3J4mrzje4-jow1ghQ&usqp=CAU">
+</div>
+
+</div>
+<div id="thanhcuoi" >
+	<div class="email">* Đăng ký nhận thông tin: </div>
+	<div class="thanhEmail">Email: <input type="text" placeholder="Nhập Email...">
+		<input type="submit" value="Đăng ký" formaction="trangchu.html">
+	</div>
+	<div> <hr size=1 width="800px" align="left"  style="background: #DCDCDC; margin: 60px 0 0 180px;" ></div>
+	<div class="review">
+		<ul>
+			<li>SUPPLO CAR</li>
+			<li>Liên hệ</li>
+			<li>Liên kết</li>
+			<li>Hỗ trợ thanh toán</li>
+		</ul>
+	</div>
+	<div class="cuoicung">
+			<div class="hh1">
+				Suplo cam kết mang lại cảm giác mới mẻ và hứng thú, tạo ra những trãi nghiệm khó quên. <br>
+				Điều làm nên sự khác biệt của Suplo so với các thương hiệu xa xỉ khác là sự độc đáo táo bạo của chúng tôi.</div>
+				<div class="hh2">
+				Địa chỉ: <br>
+				cs1: Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng 550000 <br>
+				SDT:  0898162561 <br>
+				Email: suplo@gmail.com
+
+				</div>
+				<div class="hh3">
+						<div><a href="#">Giới thiệu</a></div>
+						<div><a href="#">Tin tức nổi bật</a></div>
+						<div><a href="#">Phản hồi</a></div>
+				</div>
+				<div class="hh4">
+					<ul class="social-agileinfo">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+				</div>
+	</div>
+	<div class="bando">
+		<h4><i class="fa fa-street-view"></i>Địa chỉ Gagare:</h4><br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5501.113252410916!2d108.21439058556838!3d16.059978945058678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1591912571663!5m2!1svi!2s" width="290px" height="230px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+</div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

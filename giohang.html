@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giỏ hàng</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+ 	 <!-- Responsive CSS -->
+  <!--   <link rel="stylesheet" href="css/responsive.css"> -->
+   <!--  <link rel="stylesheet" href="css/style2.css">   -->
+  <!--   <script src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/styles.css" rel='stylesheet' type='text/css'  /> -->
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: verdana;
+		background-color: #fff;
+		background-size: cover;
+	}
+
+</style>
+<body>
+<div id="containern">
+  <!-- menu -->
+  <nav class="navbar navbar-inverse" style="position: -webkit-sticky;position: sticky;top: 0;z-index: 1000; border-bottom: 2px solid red;background-color: #111111; width: 100%;" data-aos="fade-right">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#"><img src="img/logo1.png" width="150px" style="margin-right: 100px; margin-left: 100px;"></a>
+    </div>
+    <ul class="nav navbar-nav link">
+      <li><a href="index.html">Trang chủ</a></li> 
+        <li><a href="gioithieu.html">Giới thiệu</a></li> 
+        <li><a href="###">Phân Loại <i class="fa fa-caret-down"></i></a>
+           <div class="menu">
+                           <ul style="padding-left: 5px; margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Quốc gia</li>
+                              <li><a href="danhmuc.html">Việt Nam</a></li>
+                              <li><a href="danhmuc.html">Nhật</a></li>
+                              <li><a href="danhmuc.html">Đức</a></li>
+                              <li><a href="danhmuc.html">Thái Lan</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ; ">Hãng</li>
+                              <li><a href="danhmuc.html">Lamborghini</a></li>
+                              <li><a href="danhmuc.html">BMW</a></li>
+                              <li><a href="danhmuc.html">Arrinera</a></li>
+                              <li><a href="danhmuc.html">Aston Martin</a></li>
+                              <li><a href="danhmuc.html">Pagani</a></li>
+                              <li><a href="danhmuc.html">W Motors</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Nhu cầu</li>
+                              <li><a href="danhmuc.html">Thiêt kế</a></li>
+                              <li><a href="danhmuc.html">Nội Thất</a></li>
+                              <li><a href="danhmuc.html">Dung tích</a></li>
+                              <li><a href="danhmuc.html">Động cơ</a></li>
+                              <li><a href="danhmuc.html">Tốc độ</a></li>
+                           </ul>
+                            <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Mức giá</li>
+                              <li><a href="danhmuc.html"> MG <1 tỷ</a></li>
+                              <li><a href="danhmuc.html">MG <20triệu</a></li>
+                              <li><a href="danhmuc.html">MG >20triệu</a></li>
+                              <li><a href="danhmuc.html"></a></li>
+                           </ul>
+                        </div>
+        </li> 
+      <!--  <li><a href="#">Tin tức</a></li>  -->
+        <li><a href="lienhe.html">Liên hệ</a></li> 
+      </ul>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="###"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- tk -->
+    <div class="timkiem" data-aos="fade-in" style="transition: all 1.5s;">    
+        <button type="button" class="buttongh" ><a href="giohang.html"><i class="fa fa-cart-arrow-down"></i></a></button>
+        <input type="search" placeholder="search..."><span><i class="fa fa-search"></i></span>
+      </div>
+
+      <div class="timkiem1" data-aos="fade-in" style="transition: all 1.5s;">
+        <button type="button" class="buttongh"><a href="#"><i class="fa fa-phone-square"></i></a></button>  
+      </div>
+      <div class="timkiem2 " data-aos="fade-in" style="transition: all 1.5s;">
+        <button type="button" class="buttongh"><a href="#"><i class="fa fa-angle-up"></i></a></button>  
+      </div>
+
+
+<!-- <script>
+jQuery(document).ready(function(){
+    jQuery('.click-delete').click(function(){
+        var variant_id = jQuery(this).attr('data-id');
+        var index_cart = jQuery(this).parents('.list-carts').index();
+        jQuery('#view-cart > .item-cart').eq(index_cart).remove();
+        var params = {
+            type: 'POST',
+            url: '/cart/change.js',
+            data: 'quantity=0&id=' + variant_id,
+            dataType: 'json',
+            success: function(cart) {
+                if ( cart.item_count > 0 ) {
+                    jQuery('#total-carts strong').html(Haravan.formatMoney(cart.total_price, "{{amount}}₫"));
+                    jQuery('.cart_block_total').html(Haravan.formatMoney(cart.total_price, "{{amount}}₫"));
+                    jQuery('.ajax_cart_quantity').html(cart.item_count);            
+                } else {
+                    jQuery('.ajax_cart_quantity').html(cart.item_count);
+                    jQuery('#cartformpage').remove();
+                    jQuery('#layout-page').append("<p class='text-center'>Không có sản phẩm nào trong giỏ hàng!</p><p class='text-center'><a href='/collections/all'><i class='fa fa-reply'></i> Tiếp tục mua hàng</a></p>");
+                    jQuery('#view-cart').html("<div style='padding:0 20px;'> <p style='margin:0' class='text-center'>Giỏ hàng của bạn đang trống</p><p class='text-center'><a href='https://restaurant-store.myharavan.com'>Tiếp tục mua hàng</a></p></div>");
+                }
+            },
+            error: function(XMLHttpRequest, textStatus) {
+                Haravan.onError(XMLHttpRequest, textStatus);
+            }
+        };
+        jQuery.ajax(params);
+        jQuery(this).parents('.list-carts').remove();
+    });
+});
+</script> -->
+
+<div class="container" style="margin-bottom: 50px;">
+   <h1 style="font-family: 'Copperplate'; font-weight: bold;margin-top: 20px;color: red;margin-bottom: 40px; transition: all 0.8s;"  data-aos="fade-down">Giỏ hàng</h1>  
+   <div class="table-responsive" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0">          
+  <table class="table" style="border: 1px solid #0008;">
+    <thead>
+      <tr>
+        <th class="oo"></th>
+        <th class="oo">Tên sản phẩm</th>
+        <th class="oo">Số lượng</th>
+        <th class="oo">Giá tiền</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="otable">
+        <td ><img src="img/xe1.jpg" class="imgs" /></td>
+        <td class="o1 o3"style="color: #CC3300;width: 500px;">Lamborghini Aventador LP700-4 Roadster</td>
+        <td class="o1 "><input type="number" size="4" name="updates[]" min="1" id="updates_1004637490" value="2" onfocus="this.select();" class="tc item-quantity" style="width: 40px;" /></td>
+        <td class="o1 ">26 TỶ VNĐ</td>
+        <td class="o1 o3"><a href="###" style="color: #000;">xóa</a></td>
+      </tr>
+      <tr class="otable">
+        <td ><img src="img/xe2.jpg" class="imgs" /></td>
+        <td class="o1 o3" style="color: #CC3300;"> Lamborghi Aventador S </td>
+        <td class="o1 "><input type="number" size="4" name="updates[]" min="1" id="updates_1004637490" value="2" onfocus="this.select();" class="tc item-quantity" style="width: 40px;" /></td>
+        <td class="o1 ">40 TỶ VNĐ</td>
+        <td class="o1 o3" ><a href="###" style="color: #000;">xóa</a></td>
+      </tr>
+      <tr class="otable1">
+        <td >&nbsp;</td>
+        <td class="o1 o3">&nbsp;</td>
+        <td class="o1" style="font-weight: bold; color: #000;"><b>Tổng cộng:</b></td>
+        <td style="font-weight: bold; color: #000;	">66 TỶ VNĐ
+         </td>
+         <td class="o1 "></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+ <div class="col-md-6 inner-left inner-right" style="color: #000;" data-aos="fade-left"
+     data-aos-easing="ease-in-sine">
+                        <div class="checkout-buttons clearfix">
+                            <label for="note" style="font-weight: bold;">Ghi chú </label><br>
+                            <textarea id="note" name="note" rows="3" cols="50">+ 2 Thảm lót sàn ô tô cao cấp Toyota Prado</textarea>
+                        </div>
+                    </div>
+  <div class="col-md-6 cart-buttons inner-right inner-left" data-aos="fade-right"
+     data-aos-easing="ease-in-sine">
+        <div class="buttons clearfix">
+            <button type="submit" id="checkout" class="button-default" name="checkout" value="" >Thanh toán</button>
+            <button type="submit" id="update-cart" class="button-default" name="update"  value="" >Cập nhật</button>
+        </div>
+      </div>
+      <style type="text/css">
+      	.button-default {
+	background:#bf1515;
+	border: none;
+	padding: 0 20px;
+	color: #fff;
+	font-size:16px;
+	border-radius: 3px;
+	float: right;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	cursor: pointer;
+	margin:7px;
+	margin-top: 20px;
+}
+.button-default:before {
+	content: "";
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	right: 45px;
+}
+.button-default:after {
+	content: "";
+	background: url(http://hstatic.net/0/0/global/design/theme-default/icon-arr.png) no-repeat center right;	
+	width: 30px;
+	height: 100%;
+	float: right;
+	margin-left: 10px;
+}
+      </style>
+ </div>
+
+ <!-- cuối trang -->
+<div id="thanhcuoi" >
+	<div class="email">* Đăng ký nhận thông tin: </div>
+	<div class="thanhEmail">Email: <input type="text" placeholder="Nhập Email...">
+		<input type="submit" value="Đăng ký" formaction="trangchu.html">
+	</div>
+	<div> <hr size=1 width="800px" align="left"  style="background: #DCDCDC; margin: 60px 0 0 180px;" ></div>
+	<div class="review">
+		<ul>
+			<li>SUPPLO CAR</li>
+			<li>Liên hệ</li>
+			<li>Liên kết</li>
+			<li>Hỗ trợ thanh toán</li>
+		</ul>
+	</div>
+	<div class="cuoicung">
+			<div class="hh1">
+				Suplo cam kết mang lại cảm giác mới mẻ và hứng thú, tạo ra những trãi nghiệm khó quên. <br>
+				Điều làm nên sự khác biệt của Suplo so với các thương hiệu xa xỉ khác là sự độc đáo táo bạo của chúng tôi.</div>
+				<div class="hh2">
+				Địa chỉ: <br>
+				cs1: Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng 550000 <br>
+				SDT:  0898162561 <br>
+				Email: suplo@gmail.com
+
+				</div>
+				<div class="hh3">
+						<div><a href="#">Giới thiệu</a></div>
+						<div><a href="#">Tin tức nổi bật</a></div>
+						<div><a href="#">Phản hồi</a></div>
+				</div>
+				<div class="hh4">
+					<ul class="social-agileinfo">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+				</div>
+	</div>
+	<div class="bando">
+		<h4><i class="fa fa-street-view"></i>Địa chỉ Gagare:</h4><br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5501.113252410916!2d108.21439058556838!3d16.059978945058678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1591912571663!5m2!1svi!2s" width="290px" height="230px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+</div>
+ </div>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

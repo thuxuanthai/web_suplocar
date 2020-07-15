@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+ 
+</head>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: verdana;
+		background-color: #fff;
+		background-size: cover;
+	}
+	#gioithieu{
+		width: 100%;
+		height: 90px;
+		/*border: 1px solid yellow;*/
+	}
+	#gioithieu h1{
+		position: absolute;
+		text-decoration: none;
+		color: #fff2;
+		font-size: 40px;
+		font-weight: bold;
+		padding-top: 0;
+		padding-left: 620px;
+	}
+	#gioithieu h2{
+		position: absolute;
+		text-decoration: none;
+		color: #fff;
+		font-size: 25px;
+		font-weight: none;
+		padding-top: 35px;
+		padding-left: 680px;
+		text-decoration: none;
+	}
+	#gioithieu img{
+		margin: 30px 270px 0px 270px ;
+		width: 200px;
+		z-index: -1;
+	}
+
+/*	.trangtri1{
+		width: 35%;
+		height: 50%;
+		background: none;
+		color: #fff9;
+		top: 150%;
+		left: 68%;
+		position: absolute;
+		transform: translate(-50%,-55%);
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		z-index: 9999;
+		font-family: Arial, Roboto, "Times New Roman";
+	}
+	.trangtri1 h3{
+		font-size: 25px;
+		color: #CC0000;
+		font-family: "MS Georgia", serif;
+	}*/
+</style>
+<body>
+	<div id="containern">
+	<!-- menu -->
+	<nav class="navbar navbar-inverse" style="position: -webkit-sticky;position: sticky;top: 0;z-index: 1000;	border-bottom: 2px solid red;background-color: #111111; width: 100%;" data-aos="fade-right">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#"><img src="img/logo1.png" width="150px" style="margin-right: 100px; margin-left: 100px;"></a>
+    </div>
+    <ul class="nav navbar-nav link">
+      <li><a href="#">Trang chủ</a></li> 
+				<li><a href="#">Giới thiệu</a></li> 
+				<li><a href="#">Sản phẩm <i class="fa fa-caret-down"></i></a>
+					 <div class="menu">
+                           <ul style="padding-left: 5px; margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Quốc gia</li>
+                              <li><a href="#">Việt Nam</a></li>
+                              <li><a href="#">Nhật</a></li>
+                              <li><a href="#">Đức</a></li>
+                              <li><a href="#">Thái Lan</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ; ">Hãng</li>
+                              <li><a href="#">Lamborghini</a></li>
+                              <li><a href="#">BMW</a></li>
+                              <li><a href="#">Arrinera</a></li>
+                              <li><a href="#">Aston Martin</a></li>
+                              <li><a href="#">Pagani</a></li>
+                              <li><a href="#">W Motors</a></li>
+                           </ul>
+                           <ul style="padding: 0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Nhu cầu</li>
+                              <li><a href="#">Thiêt kế</a></li>
+                              <li><a href="#">Nội Thất</a></li>
+                              <li><a href="#">Dung tích</a></li>
+                              <li><a href="#">Động cơ</a></li>
+                              <li><a href="#">Tốc độ</a></li>
+                           </ul>
+                            <ul style="padding:0;margin: 0;">
+                              <li style="font-weight: bold;border-bottom: 1px solid #000 ;">Mức giá</li>
+                              <li><a href="#"> MG <1 tỷ</a></li>
+                              <li><a href="#">MG <20triệu</a></li>
+                              <li><a href="#">MG >20triệu</a></li>
+                              <li><a href="#"></a></li>
+                           </ul>
+                        </div>
+				</li> 
+				<li><a href="#">Tin tức</a></li> 
+				<li><a href="#">Liên hệ</a></li> 
+			</ul>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="###"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- slider -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style=" margin-top: -20px;transition: all 0.8s; width: 100%;" data-aos="fade-down" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/trangchu1.jpg">
+      <div class="carousel-caption">
+        <h3>CHÀO MỪNG ĐẾN VỚI SUPLO CAR</h3>
+        <p>Bằng tất cả tâm huyết, năng lực vượt trội và quy mô không ngừng phát triển, Suplo Car cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ đúng với những giá trị mà khách hàng mong đợi.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/trangchu2.jpg">
+      <div class="carousel-caption">
+        <h3>CHÀO MỪNG ĐẾN VỚI SUPLO CAR</h3>
+        <p>Bằng tất cả tâm huyết, năng lực vượt trội và quy mô không ngừng phát triển, Suplo Car cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ đúng với những giá trị mà khách hàng mong đợi.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/trangchu3.jpg">
+      <div class="carousel-caption">
+        <h3>CHÀO MỪNG ĐẾN VỚI SUPLO CAR</h3>
+        <p>Bằng tất cả tâm huyết, năng lực vượt trội và quy mô không ngừng phát triển, Suplo Car cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ đúng với những giá trị mà khách hàng mong đợi.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- gioi thieu -->
+			<div id="gioithieu"  data-aos-delay="10">
+					<img src="img/gioithieu.jpg" data-aos="fade-right" style="transition: all 0.5s;">
+					<img src="img/gioithieu.jpg" data-aos="fade-left" style="transition: all 0.5s;">
+					<div class="uudai1" data-aos="fade-in" style="transition: all 2s;">Chất lượng hàng đầu</div>
+					<div class="uudai1 uudai2" data-aos="fade-in" style="transition: all 2s;">Siêu ưu đãi</div>
+					<div class="uudai1 uudai3" data-aos="fade-in" style="transition: all 2s;">Bảo hàng lâu dài</div>
+					<div class="uudai1 uudai4" data-aos="fade-in" style="transition: all 2s;">Kiểm đổi hàng toàn miễn phí</div>
+			 </div>
+
+<!-- tk -->
+		<div class="timkiem" data-aos="fade-in" style="transition: all 1.5s;">		
+				<button type="button" class="buttongh" ><a href="#"><i class="fa fa-cart-arrow-down"></i></a></button>
+				<input type="search" placeholder="search..."><span><i class="fa fa-search"></i></span>
+			</div>
+
+			<div class="timkiem1" data-aos="fade-in" style="transition: all 1.5s;">
+				<button type="button" class="buttongh"><a href="#"><i class="fa fa-phone-square"></i></a></button>	
+			</div>
+			<div class="timkiem2 " data-aos="fade-in" style="transition: all 1.5s;">
+				<button type="button" class="buttongh"><a href="#"><i class="fa fa-angle-up"></i></a></button>	
+			</div>
+<!-- spmn -->
+	<div class="sanphamhot"  >
+		<div data-aos="fade-right" data-aos-delay="500" >
+		<h1>SUPLO CAR</h1> 
+		<h2>SIÊU PHẨM HOT NHẤT</h2><br></div>
+		<label data-aos="fade-left" data-aos-delay="500"><a href="#"><i><u>Xem thêm...</u></i></a></label>
+			  <!-- Swiper -->
+  <div class="swiper-container " data-aos="fade-left" data-aos-delay="500" >
+    <div class="swiper-wrapper ">
+    	<div class="imgBx swiper-slide" ><img src="img/xe1.jpg">
+    				<div class="tensp">Lamborghini Aventador LP700-4 Roadster</div>
+					<div class="giasp">Giá: 26 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but" ><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but" ><a href="chitietSP.html">Xem chi tiết</a></button></div></div>
+    	<div class="imgBx swiper-slide"><img src="img/xe2.jpg">
+    				<div class="tensp"> Lamborghi Aventador S </div>
+					<div class="giasp">Giá: 40 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but" ><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but" > <a href="chitietSP.html">Xem chi tiết</a></button>
+					</div></div>
+    	<div class="imgBx swiper-slide"><img src="img/xe3.jpg">
+    				<div class="tensp">Lamborghini Aventador SVJ </div>
+					<div class="giasp">Giá: 60 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but" ><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but"><a href="chitietSP.html">Xem chi tiết</a></button>
+					</div></div>
+    	<div class="imgBx swiper-slide"><img src="img/xe4.jpg">
+    				<div class="tensp">siêu xe Lamborghini Centenario </div>
+					<div class="giasp">Giá: 51 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but" ><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but" ><a href="chitietSP.html">Xem chi tiết</a></button>
+					</div></div>
+    	<div class="imgBx swiper-slide"><img src="img/xe5.jpg">
+    			<div class="tensp">Lamborghini Reventon </div>
+					<div class="giasp">Giá: 31.5 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but"><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but"><a href="chitietSP.html">Xem chi tiết</a></button>
+					</div>
+				</div>
+		<div class="imgBx swiper-slide"><img src="img/xe5.jpg">
+    			<div class="tensp">Lamborghini Reventon </div>
+					<div class="giasp">Giá: 31.5 TỶ VNĐ</div>
+					<div class="muasp">
+						<button type="button" class="but"><a href="###">Thêm vào giỏ</a></button>
+						<button type="button" class="but" ><a href="###">Mua ngay</a></button>
+						<button type="button" class="but"><a href="chitietSP.html">Xem chi tiết</a></button>
+					</div>
+				</div>
+ 
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+      <script>
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+	</div> 
+<!-- phu tung khuyến mãi  	text-transform: uppercase;  -->
+<div class="hhh1" data-aos="zoom-in" style="transition: all 0.8s;"><h1>khuyến mãi sốc</h1></div>
+	<div id="phutung">
+		<div class="tie"><h2>Quà tặng hấp dẫn</h2></div>
+		<label><a href="#"><i><u>Xem thêm...</u></i></a></label>
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><a href="###"><img src="img/phutung1.jpg" >
+				<p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><a href="###"><img src="img/phutung2.jpg" >
+				<p>Thảm lót sàn ô tô cao cấp (<font color="red"style=" text-decoration: line-through;">1.500.000đ</font>)
+</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><a href="###"><img src="img/phutung3.jpg" >
+				<p> Thảm lót sàn ô tô bằng cao su 2 chỗ và xe tải (<font color="red"style=" text-decoration: line-through;">99.000đ</font>)
+</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><a href="###"><img src="img/phutung4.jpg" >
+				<p>Thảm lót sàn MAZDA CX-9 (<font color="red"style=" text-decoration: line-through;">1.790.000đ</font>)
+</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><a href="###"><img src="img/phutung5.jpg" >
+				<p> Thảm lót cốp ô tô Toyota Fortuner 2020 (<font color="red"style=" text-decoration: line-through;">1.100.000đ</font> )
+</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><a href="###"><img src="img/phutung6.jpg" >
+				<p> Lót cốp xe Huyndai i10 sedan (<font color="red"style=" text-decoration: line-through;">360.000đ</font>)
+</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><a href="###"><img src="img/phutung7.jpg" >
+				<p> Thảm Lót Cốp Ô Tô Rollroyce Ghost 2020 (<font color="red"style=" text-decoration: line-through;">1.200.000đ</font>)</p><img src="http://www.pngall.com/wp-content/uploads/2016/04/Free-Free-Download-PNG.png" style="width: 100px;height: 70px; margin-top: -600px;margin-left: 210px;"></a></div>
+<!-- san pham đang sale trong thang-->
+		<div class="tie" style="margin-top: 50px;"><h2>Siêu phẩm đang sale trong tháng</h2></div>
+		<label><a href="#"><i><u>Xem thêm...</u></i></a></label>
+			<div class="divphutung"  data-aos="fade-left" style="transition: all 1s;"><a href="chitietSP.html"><img src="img/sale1.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ </font>) <font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></a></div>
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale2.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red" style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></div>
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale3.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></div>
+			<div class="divphutung" data-aos="fade-left" style="transition: all 1s;"><img src="img/sale4.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><img src="img/sale5.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><img src="img/sale6.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></div>
+			<div class="divphutung" data-aos="fade-right" style="transition: all 1s;"><img src="img/sale7.jpg" ><p>Thảm lót sàn ô tô cao cấp Toyota Prado (<font color="red"style=" text-decoration: line-through;">2.790.000đ</font>)<font color="red"> -25%</font><img src="https://e7.pngegg.com/pngimages/506/709/png-clipart-movember-save-up-to-25-off-label-photography-sticker.png" style="width: 50px; margin-top: -530px;margin-right: 120px;"> </p><p style="margin-top: -20px;">Giá sale: <font color="blue">2.092.500đ</font></p></div>
+	</div>
+
+<!-- slider -->
+
+
+<div class="swiper-container" style=" width: 100%;height: 500px;background-image: url('img/nen_sph.jpg');background-repeat:no-repeat;">
+	<h1 style=" color: yellow; margin:20px auto; font-weight:bold; font-family: 'Open Sans Condensed', sans-serif;">Đánh giá của khách hàng</h1>
+    <div class="swiper-wrapper" style="margin-top:0; ">
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%; " class="dd">
+      		<img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/hinh-nen-girl-xinh.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      	</div>
+      <div class="swiper-slide">
+      	<div style=" width:99.9%; height: 70%;" class="dd">
+      		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTu01vsds9QzisVK4oTXGSQZziEMybDM8FR5A&usqp=CAU">
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div></div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="https://hinhanhdephd.com/wp-content/uploads/2016/02/nguoi-dep-hotgirl-voi-xe-mo-to-8-1.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg">
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg">
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+      <div class="swiper-slide">
+      	<div style=" width: 99.9%; height: 70%;" class="dd">
+      		<img src="img/xe5.jpg" >
+      		<h3>Trương Vinh</h3>
+      		<p>Những chiếc SUV cỡ vừa rõ ràng đang là xu thế của thị trường, một người không làm về chuyên ngành ô tô như tôi cũng hiểu rõ điều này. Một chiếc xe gầm cao phục vụ được nhiều mục đích mới là một chiếc xe đáng lựa chọn.
+
+</p>
+      		</div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+       autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+<!-- cuối trang -->
+<div id="thanhcuoi" >
+	<div class="email">* Đăng ký nhận thông tin: </div>
+	<div class="thanhEmail">Email: <input type="text" placeholder="Nhập Email...">
+		<input type="submit" value="Đăng ký" formaction="trangchu.html">
+	</div>
+	<div> <hr size=1 width="800px" align="left"  style="background: #DCDCDC; margin: 60px 0 0 180px;" ></div>
+	<div class="review">
+		<ul>
+			<li>SUPPLO CAR</li>
+			<li>Liên hệ</li>
+			<li>Liên kết</li>
+			<li>Hỗ trợ thanh toán</li>
+		</ul>
+	</div>
+	<div class="cuoicung">
+			<div class="hh1">
+				Suplo cam kết mang lại cảm giác mới mẻ và hứng thú, tạo ra những trãi nghiệm khó quên. <br>
+				Điều làm nên sự khác biệt của Suplo so với các thương hiệu xa xỉ khác là sự độc đáo táo bạo của chúng tôi.</div>
+				<div class="hh2">
+				Địa chỉ: <br>
+				cs1: Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng 550000 <br>
+				SDT:  0898162561 <br>
+				Email: suplo@gmail.com
+
+				</div>
+				<div class="hh3">
+						<div><a href="#">Giới thiệu</a></div>
+						<div><a href="#">Tin tức nổi bật</a></div>
+						<div><a href="#">Phản hồi</a></div>
+				</div>
+				<div class="hh4">
+					<ul class="social-agileinfo">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+				</div>
+	</div>
+	<div class="bando">
+		<h4><i class="fa fa-street-view"></i>Địa chỉ Gagare:</h4><br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5501.113252410916!2d108.21439058556838!3d16.059978945058678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1591912571663!5m2!1svi!2s" width="290px" height="230px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+</div>
+		</div>
+		</div>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
